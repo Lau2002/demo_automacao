@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class SmokeController {
 
+
     private final SmokeService smokeService;
 
     @GetMapping("/smoke")
