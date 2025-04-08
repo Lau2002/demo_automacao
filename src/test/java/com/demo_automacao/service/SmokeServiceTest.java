@@ -26,12 +26,4 @@ class SmokeServiceTest {
 
         assertEquals(expected, result);
     }
-
-    @Test
-    void givenNoErrorsWhenGetSmokeHourTestThenShouldReturnSuccessful() {
-        String result = smokeService.smokeHourTest();
-
-        assertEquals(LocalTime.now().toString(), result);
-    }
-
 }

@@ -15,8 +15,6 @@ public class SmokeService {
 
     public String smokeHourTest() {
         LocalTime currentTime = LocalTime.now();
-        // Retorna a hora como uma string formatada
         return currentTime.toString();
-
     }
 }
