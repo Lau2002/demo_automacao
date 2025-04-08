@@ -6,6 +6,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.time.LocalTime;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.when;
@@ -23,6 +25,13 @@ class SmokeServiceTest {
         String result = smokeService.smokeTest();
 
         assertEquals(expected, result);
+    }
+
+    @Test
+    void givenNoErrorsWhenGetSmokeHourTestThenShouldReturnSuccessful() {
+        String result = smokeService.smokeHourTest();
+
+        assertEquals(LocalTime.now().toString(), result);
     }
 
 }
