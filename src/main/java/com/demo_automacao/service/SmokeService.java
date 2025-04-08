@@ -13,8 +13,4 @@ public class SmokeService {
       return "[SUCCESS]";
     }
 
-    public String smokeHourTest() {
-        LocalTime currentTime = LocalTime.now();
-        return currentTime.toString();
-    }
 }
